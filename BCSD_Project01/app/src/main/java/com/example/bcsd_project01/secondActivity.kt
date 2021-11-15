@@ -3,7 +3,7 @@ package com.example.bcsd_project01
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import kotlin.random.Random
+import java.security.SecureRandom
 
 class secondActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class secondActivity : AppCompatActivity() {
         val show_num =findViewById<TextView>(R.id.textView2)// 문장 텍스트 뷰의 주소 값
         val main_text =findViewById<TextView>(R.id.maintext)//랜덤된 숫자를 표시하는 텍스트 뷰의 주소 값
 
-        var random = Random(0)
+        var random = SecureRandom()
         var random_number = random.nextInt(number)//랜덤된 숫자를 얻음 0~ number
 
         var improtstr1 = getString(R.string.mainstr, number)
