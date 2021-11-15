@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         random.setOnClickListener(){
             val intent = Intent(this, secondActivity::class.java)
-            intent.putExtra("main_num","number")
+            intent.putExtra("main_num",number)
             startActivity(intent)
         }
 
